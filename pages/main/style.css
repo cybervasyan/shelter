@@ -1,0 +1,123 @@
+:root {
+    --color-beige: #f1cdb3;
+    --color-beige-light: #fddcc4;
+    --color-grey: #cdcdcd;
+    --color-black: #545454;
+    --color-black-dark: #292929;
+}
+
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: inherit;
+    user-select: none;
+}
+*::-webkit-scrollbar {
+    width: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    background-color: white;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color-black);
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../../assets/fonts/ArialMT.woff") format("woff");
+}
+
+@font-face {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: italic;
+    src: url("../../assets/fonts/Arial-ItalicMT.woff") format("woff");
+}
+
+@font-face {
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../../assets/fonts/Georgia.woff") format("woff");
+}
+
+@font-face {
+    font-family: Georgia;
+    font-weight: 600;
+    font-style: normal;
+    src: url("../../assets/fonts/Georgia-Bold.woff") format("woff");
+}
+
+.material-icons {
+    font-size: 18px;
+    font-family: "Material icons", emoji;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template: 120px auto 350px / 1fr minmax(auto, 1280px) 1fr;
+}
+
+.header {
+    grid-area: 1 / 2;
+    position: relative;
+    color: white;
+}
+
+.header__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 908px;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
+    linear-gradient(0deg, #211f20, #211f20);
+}
+
+.header__background::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/img/bgimage.png");
+}
