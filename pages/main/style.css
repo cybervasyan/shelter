@@ -121,3 +121,143 @@ body {
     width: 100%;
     background-image: url("../../assets/img/bgimage.png");
 }
+
+.header__container {
+    position: relative;
+    z-index: 1;
+    height: 120px;
+    padding: 60px 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 184px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    animation: logo-disappear 0.5s ease-in-out forwards;
+}
+
+@keyframes logo-disappear {
+    0% {
+        width: 184px;
+        position: fixed;
+        top: 30px;
+        right: 126px;
+        z-index: 30;
+    }
+
+    25% {
+        width: 0;
+        position: fixed;
+        top: 30px;
+        right: 126px;
+        z-index: 30;
+    }
+
+    50% {
+        width: 0;
+        position: relative;
+        top: 0;
+        right: 0;;
+    }
+
+    100% {
+        width: 184px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+.header__logo h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    color: var(--color-beige);
+}
+
+.header__logo span {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.header__menu {
+    width: 443px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__link {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: var(--color-grey);
+    cursor: pointer;
+    transition: 0.3s;
+    padding-bottom: 3px;
+}
+
+.header__link-active::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    background-color: var(--color-beige);
+    transition: 0.3s;
+}
+
+.header__link:hover {
+    color: white;
+}
+
+.header__link-active {
+    color: white;
+}
+
+.header__link-active::before {
+    position: absolute;
+    animation: appear 0.3s ease-in-out forwards;
+    width: 100%;
+}
+
+@keyframes appear {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
