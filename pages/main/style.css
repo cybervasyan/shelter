@@ -357,3 +357,128 @@ body {
     background: var(--color-beige-light);
 }
 
+.section {
+    padding: 80px 40px 100px;
+    background-color: #f6f6f6;
+}
+
+.section:nth-child(even) {
+    background-color: white;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 9.4%;
+}
+
+.about__image {
+    height: 408px;
+    width: 300px;
+    background-image: url("../../assets/img/about-pets.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.about__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: flex-start;
+}
+
+.about__header {
+    width: 370px;
+}
+
+.about__text {
+    width: 430px;
+}
+
+.pets {
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template: repeat(3, auto) / 52px 1fr 52px;
+    row-gap: 60px;
+}
+
+.pets__header {
+    grid-area: 1 / 2;
+    width: 400px;
+    text-align: center;
+    justify-self: center;
+}
+
+.round__button {
+    height: 52px;
+    width: 52px;
+    border: solid var(--color-beige) 2px;
+    background: transparent;
+    border-radius: 50%;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.round__button:hover {
+    border: solid var(--color-beige-light) 2px;
+    background-color: var(--color-beige-light);
+}
+
+.round__button:active {
+    transform: scale(0.9);
+}
+
+.back {
+    grid-area: 2 / 1;
+    transform: rotate(180deg);
+}
+
+.back:active {
+    transform: scale(0.9) rotate(180deg);
+}
+
+.pets__items {
+    grid-area: 2 / 2;
+    justify-self: center;
+    display: flex;
+    width: 990px;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 990px;
+    display: flex;
+    position: relative;
+    left: -1080px;
+    flex-shrink: 0;
+    column-gap: 90px;
+}
+
+.carousel__item {
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.carousel__center {
+    position: relative;
+}
+
+.move-right {
+    left: -2160px;
+    transition: 0.7s;
+}
+
+.move-left {
+    left: 0;
+    transition: 0.7s;
+}
+
+.pet {
+
+}
