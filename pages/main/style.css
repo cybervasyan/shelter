@@ -261,3 +261,99 @@ body {
     }
 }
 
+.main {
+    margin-top: 60px;
+    grid-area: 2 / 2;
+    display: grid;
+    justify-self: center;
+    grid-template: repeat(4, auto) / minmax(auto, 1280px);
+}
+
+.make-friend {
+    height: 728px;
+    padding: 0 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.make-friend__bg {
+    height: 728px;
+    width: 698px;
+    object-fit: cover;
+}
+
+.make-friend__items {
+    padding: 163px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 42px;
+}
+
+.section__header {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var(--color-black);
+}
+
+.make-friend__header {
+    width: 310px;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0;
+    text-align: left;
+    color: white;
+}
+
+.main__text {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.make-friend__text {
+    width: 460px;
+    color: var(--color-grey);
+}
+
+.button {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    height: 52px;
+    width: 207px;
+    color: var(--color-black-dark);
+    border-radius: 100px;
+    cursor: pointer;
+    background: var(--color-beige);
+    transition: 0.3s;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.make-friend__button {
+    width: 207px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background: var(--color-beige-light);
+}
+
