@@ -571,11 +571,13 @@ body {
     width: 351px;
     margin: 50px 20px 0 0;
 }
+
 .pet-card__top {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
+
 .pet-card__name {
     font-family: Georgia, serif;
     font-size: 35px;
@@ -584,6 +586,7 @@ body {
     line-height: 45px;
     letter-spacing: 0.06em;
 }
+
 .pet-card__breed {
     font-family: Georgia, serif;
     font-size: 20px;
@@ -592,6 +595,7 @@ body {
     line-height: 23px;
     letter-spacing: 0.06em;
 }
+
 .pet-card__description {
     font-family: Georgia, serif;
     font-size: 15px;
@@ -600,6 +604,7 @@ body {
     line-height: 17px;
     letter-spacing: 0.06em;
 }
+
 .pet-card__bottom {
     display: flex;
     flex-direction: column;
@@ -611,10 +616,12 @@ body {
     line-height: 17px;
     letter-spacing: 0.06em;
 }
+
 .pet-card__point {
     padding-left: 14px;
     position: relative;
 }
+
 .pet-card__point::before {
     position: absolute;
     content: "fiber_manual_record";
